@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <div [froalaEditor]='froalaOptions' [(froalaModel)]="post">Hello, Froala!</div>
+    <div class="row">
+      <div class="col-md-4 ml-0 mt-2">
+          <button class="btn btn-info" (click)="onPostSubmit()" > Post Now</button>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let item of allposts; let i=index">
+    <div class="shadow" style="width: 50%; margin: auto;">
+      <p>{{ i+1 }} {{ item }}</p>
+    </div>
+  </div>
+
+</ion-content>

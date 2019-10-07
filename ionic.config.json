@@ -1,0 +1,7 @@
+{
+  "name": "froalaDemoApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
